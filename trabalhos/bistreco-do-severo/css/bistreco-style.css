@@ -1,0 +1,115 @@
+section {
+    padding-top: 40px;
+}
+
+.hero {background: url(../img/pattern_bistreco.png);}
+
+.fixed {background-color:#1a5f9f;}
+
+header ul.primary-nav li a:hover {
+    color:#ffcb08;
+}
+
+@media screen and (max-width: 991px){
+    .header-nav {background-color:#1a5f9f;}
+}
+
+.hero h1 {
+    margin-bottom: 110px;
+}
+
+.hero h1 img {
+    max-width: 238px;
+}
+
+p {
+    font-family: 'swis721_md_btmedium';
+    font-size: 14px;
+    line-height: 2;
+    white-space: pre-line;
+}
+
+
+
+.projectDescription H3 {
+    font-family: 'frente_h1regular';
+    font-size: 36px;
+    color: #522b00;
+    white-space: pre-line;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    
+}
+
+.projectDescription H4 {
+    font-family: 'frente_h1regular';
+    color: #522b00;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.projectDescription p {
+    color: #303030;
+}
+
+.description-content {
+    margin-left: 55px;
+}
+
+.description-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 42px;
+    margin-top: 5px;
+}
+
+span.icon {
+    background: url('../img/ico_feather.png') no-repeat;
+    width: 42px;
+    height: 36px;
+    display: block;
+}
+
+.etapas {
+    background-color: #1a5f9f;
+    padding-bottom: 38px;
+}
+
+.etapas img {
+    max-width: 65%;
+}
+
+.referencias .description-content  {
+    color: #303030;
+}
+
+.referencias .row div, etapas .row div {
+    padding-bottom: 30px;
+}
+
+.logo-fim {
+    padding-bottom: 40px;
+}
+
+.buttons-bar {background-color:#1a5f9f;}
+
+/*Querie*/
+@media screen and (max-width:767px) {
+
+    .etapas .col-xs-12 {
+        padding-bottom: 20px;
+    }
+    .etapas .col-xs-12 img {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width:480px) {
+     p {
+        font-size: 11px;
+    }
+}
+
+.pd-bottom {
+    padding-bottom: 40px;
+}
