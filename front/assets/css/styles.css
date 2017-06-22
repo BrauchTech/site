@@ -91,13 +91,13 @@ Divisões
 ========================================================================== */
 
     .hero-division {
-        background: #967200 url(../img/hr-hero.png) repeat-x;
+        background: #967200 url(static/img/hr-hero.png) repeat-x;
         height: 45px;
         width: 100%;
         display: block;
         }
     .osnawas-division {
-        background: url(../img/hr-osnawas.png) repeat-x;
+        background: url(static/img/hr-osnawas.png) repeat-x;
         height: 47px;
         display: block;
         width: 100%;
@@ -106,27 +106,27 @@ Divisões
         z-index: 99;
     }
     .oquefazemos-division {
-        background: url(../img/hr-oquefazemos.png) repeat-x;
+        background: url(static/img/hr-oquefazemos.png) repeat-x;
         height: 51px;
         width: 100%;
         display: block;
         }
     .trabalhos-division {
-        background: #ffffff url(../img/hr-trabalhos.png) repeat-x center;
+        background: #ffffff url(static/img/hr-trabalhos.png) repeat-x center;
         height: 79px;
         width: 100%;
         display: block;
         }
 
     .divisoria-contato {
-        background: #ffffff url(../img/hr-contato.png) repeat-x;
+        background: #ffffff url(static/img/hr-contato.png) repeat-x;
         height: 65px;
         width: 100%;
         display: block;
         }
 
     .divisoria-instanawa {
-        background: url(../img/hr-instanawa.png) repeat-x center;
+        background: url(static/img/hr-instanawa.png) repeat-x center;
         height: 61px;
         width: 100%;
         display: block;
@@ -149,7 +149,7 @@ A tribo
 .atribo .cabana-wrap {
     width: 400px;
     height: 330px;
-    background: url(../img/cabana-atribo.png) no-repeat center center;
+    background: url(static/img/cabana-atribo.png) no-repeat center center;
     z-index: 4;
     left: 56%;
     position: absolute;
@@ -161,19 +161,19 @@ A tribo
     background-color: #522b00;
     }
     .pilares h3.missao {
-        background-image: url(../img/missao.png);
+        background-image: url(static/img/missao.png);
         width: 73px;
         height: 28px;
         margin: 20px auto;
         }
     .pilares h3.visao {
-        background-image: url(../img/visao.png);
+        background-image: url(static/img/visao.png);
         width: 56px;
         height: 28px;
         margin: 20px auto;
         }
     .pilares h3.valores {
-        background-image: url(../img/valores.png);
+        background-image: url(static/img/valores.png);
         width: 86px;
         height: 21px;
         margin: 20px auto;
@@ -261,26 +261,26 @@ O que fazemos
     position: relative;
     }
   .oquefazemos h3.design{
-        background-image: url(../img/design.png);
+        background-image: url(static/img/design.png);
         width: 177px;
         height: 67px;
         margin: 20px auto;
         }
     .oquefazemos h3.branding {
-        background-image: url(../img/branding.png);
+        background-image: url(static/img/branding.png);
         width: 177px;
         height: 67px;
         margin: 20px auto;
         }
     .oquefazemos h3.uiux {
-        background-image: url(../img/uiux.png);
+        background-image: url(static/img/uiux.png);
         width: 177px;
         height: 67px;
         margin: 20px auto;
         }
 
 .border-circle {
-    background: url(../img/rounded-border.png) no-repeat;
+    background: url(static/img/rounded-border.png) no-repeat;
     width: 219px;
     height: 219px;
     position: absolute;
@@ -366,12 +366,12 @@ a.expand {
     background-color: #ffffff;
     }
     .trabalhos h3.ecomida {
-        background-image: url(../img/title-ecomida.png);
+        background-image: url(static/img/title-ecomida.png);
         width: 118px;
         height: 27px;
         }
     .trabalhos h3.bistreco {
-        background-image: url(../img/title-bistreco.png);
+        background-image: url(static/img/title-bistreco.png);
         width: 262px;
         height: 27px;
         }
@@ -390,7 +390,7 @@ a.expand {
 }
 
 .thumb-bistreco {
-    background: url(../img/pattern_bistreco.png);
+    background: url(static/img/pattern_bistreco.png);
 }
 
 .caption {
@@ -403,7 +403,7 @@ a.expand {
 }
 
 .caption-borderTop {
-    background: url(../img/caption-border-top.png) repeat-x;
+    background: url(static/img/caption-border-top.png) repeat-x;
     height: 46px;
     position: relative;
     top: -46px;
@@ -419,7 +419,7 @@ Instanawa
 }
 
 .instanawa .hero-banner {
-    background:#941611 url(../img/billboard_instanawa.png) no-repeat center;
+    background:#941611 url(static/img/billboard_instanawa.png) no-repeat center;
 	background-size: cover;
     height: 494px;
 }
@@ -466,7 +466,7 @@ Contato
     border: none;
     background-color: transparent;
     }
-  
+
     .sign-up .signup-form .form-input-group input::-webkit-input-placeholder,
     .sign-up .signup-form .form-input-group textarea::-webkit-input-placeholder {
         color: #522b00;font-family: 'frente_h1regular'; font-size:18px; font-weight: bold;
@@ -484,7 +484,7 @@ Contato
         color: #522b00;font-family: 'frente_h1regular'; font-size:18px; font-weight: bold;
         }
 
-.contato p { 
+.contato p {
     font-size: 13px;
 }
 
@@ -499,7 +499,7 @@ Contato
 .contato .cabana-wrap {
     width: 600px;
     height: 561px;
-    background: url(../img/cabana-contato.png) no-repeat center center;
+    background: url(static/img/cabana-contato.png) no-repeat center center;
     z-index: 4;
     }
 
@@ -521,7 +521,7 @@ MODAL
 
 .sweet-alert {
     height: 476px;
-    background: url(../img/modal-smoke.png) no-repeat;
+    background: url(static/img/modal-smoke.png) no-repeat;
     background-size: contain;
     max-width: 420px;
     width: 100%;
@@ -552,14 +552,14 @@ MODAL
 }
 
 @media (max-width: 540px){
-    
+
 .sweet-alert {
     width: auto;
     margin-left: 0;
     margin-right: 0;
     left: 15px;
     right: 15px; }
-    
+
     .sweet-alert h2 {
         font-size: 30px;
         margin-top: 114px;
@@ -572,6 +572,5 @@ MODAL
 
     .sweet-alert button {
         margin-top: 10px;
-        }  
+        }
     }
-
