@@ -4,7 +4,7 @@
   "description": "brauch website",
   "main": "back/app.js",
   "scripts": {
-    "start": "back/app.js"
+    "start": "node back/app.js"
   },
    "engines": {
     "node": "8.0.0"
