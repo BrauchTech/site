@@ -6,6 +6,9 @@
   "scripts": {
     "start": "back/app.js"
   },
+   "engines": {
+    "node": "8.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrauchTech/site.git"
