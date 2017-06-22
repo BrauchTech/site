@@ -2,9 +2,9 @@
   "name": "brauch_site",
   "version": "1.0.0",
   "description": "brauch website",
-  "main": "app.js",
+  "main": "back/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "back/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/BrauchTech/site/issues"
   },
-  "homepage": "https://github.com/BrauchTech/site#readme"
+  "homepage": "https://github.com/BrauchTech/site#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
