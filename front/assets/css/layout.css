@@ -20,10 +20,11 @@ p {
 }
 
 h1 {
-    font-family: 'frente_h1regular';
-	font-size: 48px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    margin: 4px;
+    text-align: center;
+    height: 23vh;
 }
 
 h2 {
@@ -176,13 +177,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #ffffff;
+    background-color: #000000;
     height: 100%;
     -webkit-text-size-adjust: 100%; 
 }
 
 section {
-    padding-top: 90px;
-    position: relative;
+    /* padding-top: 90px;
+    position: relative; */
 }
 
 ul, ol {
@@ -446,20 +448,19 @@ Social Bar
 Footer
 ========================================================================== */
 footer {
-    background-color:#522b00;
+    background-color:#09de74;
     position: relative;
+    height: 70px;
 }
 
 footer .copyright {
-    margin: 70px 0 70px 0;
     text-align: center;
-    text-transform: uppercase;
     font-size: 14px;
     font-family: 'swis721_ltcn_btlight';
-    color: #FFFFFF;
-    opacity: 0.3;
-    display: inline-block;
-    width: 95.5%;
+    color: #000;
+    margin: 0;
+    padding: 27px;
+
 }
 
 footer .top {
@@ -634,16 +635,7 @@ header {
 		margin-bottom: 30px;
 	}
     
-    footer .copyright {
-        width: 90.5%;}
-    
 }
-
-@media screen (min-width:481px) and (max-width:768px) {
-    footer .copyright {
-        width: 92.5%;
-        }
-    }
 
 @media screen and (max-width:580px) {
     .buttons-bar {
@@ -662,15 +654,5 @@ header {
     .btn-Prev, .btn-Next, .btn-BackToWorks {
         width: 36px;
         background-size: contain;
-        }
-    }
-
-@media screen and (max-width:480px) {
-    
-    footer .copyright {
-        font-size: 12px;
-        width: 86.5%;
-        white-space: pre-line;
-        margin: 52px 0;
         }
     }

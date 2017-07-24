@@ -14,7 +14,7 @@ app.use(function (req, res) {
   res.render('index');
 })
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 8080, function () {
 	if(!process.env.PORT)
   		console.log('Example app listening on port 3000!');
 })
