@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -27,27 +27,24 @@
   <meta name="twitter:title" content="Brauch:Tech">
   <meta name="twitter:description" content="">
 
-  <meta name="msapplication-TileColor" content="#09de74">
-  <meta name="msapplication-TileImage" content="static/img/favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#09de74">
-
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/layout.css">
-
-  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./assets/css/layout.css">
 </head>
 
 <body id="top">
@@ -55,7 +52,7 @@
     <div class="container">
       <div class="row">
         <div class="botfriend">
-          <img src="static/img/bot-friend.png" widht="" height="" alt="bot:friend">
+          <img src="./assets/img/bot-friend.png" alt="bot:friend">
         </div>
         <h1>#wearebrauchtech</h1>
       </div>
@@ -70,7 +67,7 @@
 
     <fieldset style="margin-top:3%">
       <legend>BRAUCHERS</legend>
-      Pedro Raquel Wilson Afonso Edwi? Diogo Otavio
+      Pedro Raquel Wilson
       </ul>
     </fieldset>
 
@@ -84,16 +81,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="copyright">© 2017 Brauch:Tech. Todos os Direitos Reservados</h3>
+          <h3 class="copyright">© 2018 Brauch:Tech. Todos os Direitos Reservados</h3>
         </div>
       </div>
     </div>
   </footer>
+
   <script type="text/javascript">
     if (navigator.serviceWorker.controller) {
       console.log('[PWA Builder] active service worker found, no need to register')
     } else {
-      navigator.serviceWorker.register('assets/js/pwabuilder-sw.js', {
+      navigator.serviceWorker.register('pwabuilder-sw.js', {
         scope: './'
       }).then(function(reg) {
         console.log('Service worker has been registered for scope:' + reg.scope);
