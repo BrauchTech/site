@@ -1,17 +1,49 @@
 const express = require('express'),
   app = express(),
   compression = require('compression'),
-  helmet = require('helmet')
+  helmet = require('helmet'),
+  nodemailer = require('nodemailer')
 
 app.set('view engine', 'ejs')
 app.set('views', './front')
 
 app.use(helmet())
 app.use(compression())
-app.use('/static', express.static('./front/assets/'))
+app.use(express.static('./front/'))
 
-app.use(function(req, res) {
-  res.render('index');
+app.get('/contato', function(req, res) {
+  nodemailer.createTestAccount((err, account) => {
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.user,
+        pass: process.env.pass
+      }
+    })
+
+    let t = `nome: `
+
+    const mailOptions = {
+      from: `Contato Site <${process.env.user}>`,
+      to: `${process.env.dest1}, ${process.env.dest2}`,
+      subject: 'CONTATO',
+      text: t,
+      html: t
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {})
+  })
+
+  res.status(200).json({
+    msg: 'Email encaminhado com sucesso'
+  })
+
+})
+
+app.get('/', function(req, res) {
+  res.render('index.ejs')
 })
 
 app.listen(process.env.PORT || 8080, function() {
