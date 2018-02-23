@@ -64,6 +64,8 @@
     </div>
   </section>
 
+  <%= msg %>
+
   <section>
     <fieldset>
       <legend>BRAUCH</legend>
@@ -82,15 +84,19 @@
 
     <fieldset style="margin-top:3%">
       <legend>CONTACT</legend>
-      <form action="/contato">
+      <form action="/contato" method="post">
         Como devemos te chamar? <br/><br/>
-        <input type="text" name="" value="">  <br/><br/>
+        <input type="text" name="nome" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Por favor não seja tímido')">  <br/><br/>
+
         Em qual email podemos nos comunicar? <br/><br/>
-        <input type="text" name="" value=""> <br/><br/>
+        <input type="email" name="email" required  oninput="setCustomValidity('')" required oninvalid="this.setCustomValidity('Parece que você não digitou um email válido')"> <br/><br/>
+
         Tem telefone/whatsapp/telegram? <br/><br/>
-        <input type="text" name="" value=""> <br/><br/>
+        <input type="text" name="telefone" > <br/><br/>
+
         E como podemos ajudar? <br/><br/>
-        <textarea name="name" rows="8" cols="80"></textarea> <br/><br/>
+        <textarea name="mensagem" rows="8" cols="80" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Manda ver! Estamos aqui para ajudar')"></textarea> <br/><br/>
+
         <input type="submit" name="" value="Call the Brauchers!">
       </form>
     </fieldset>
@@ -116,6 +122,7 @@
   </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114461826-1"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

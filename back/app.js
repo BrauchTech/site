@@ -2,7 +2,8 @@ const express = require('express'),
   app = express(),
   compression = require('compression'),
   helmet = require('helmet'),
-  nodemailer = require('nodemailer')
+  nodemailer = require('nodemailer'),
+  bodyParser = require('body-parser')
 
 app.set('view engine', 'ejs')
 app.set('views', './front')
@@ -10,8 +11,9 @@ app.set('views', './front')
 app.use(helmet())
 app.use(compression())
 app.use(express.static('./front/'))
+app.use(bodyParser())
 
-app.get('/contato', function(req, res) {
+app.post('/contato', function(req, res) {
   nodemailer.createTestAccount((err, account) => {
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -22,6 +24,8 @@ app.get('/contato', function(req, res) {
         pass: process.env.pass
       }
     })
+
+    console.log(req.body);
 
     let t = `nome: `
 
@@ -36,14 +40,14 @@ app.get('/contato', function(req, res) {
     transporter.sendMail(mailOptions, (error, info) => {})
   })
 
-  res.status(200).json({
+  res.render('index.ejs', {
     msg: 'Email encaminhado com sucesso'
   })
 
 })
 
 app.get('/', function(req, res) {
-  res.render('index.ejs')
+  res.render('index.ejs', {msg: ''})
 })
 
 app.listen(process.env.PORT || 8080, function() {
