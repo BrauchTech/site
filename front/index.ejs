@@ -132,16 +132,17 @@
 
   <script>
   function notification(){
-    Notification.requestPermission().then(function(result){
-      console.log(result)
-    })
-  
    var options = {
     body: "theBody",
     icon: "theIcon"
     };
   
     var n = new Notification("theTitle", options);
+    
+    n.requestPermission().then(function(result){
+      console.log(result);
+    });
+    
     setTimeout(n.close.bind(n), 5000);
     }
     notification();
