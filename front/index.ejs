@@ -130,6 +130,15 @@
     gtag('config', 'UA-114461826-1');
   </script>
 
+  <script>
+   var options = {
+    body: "theBody",
+    icon: "theIcon"
+  }
+  
+  var n = new Notification("theTitle", options);
+  setTimeout(n.close.bind(n)m 5000);
+  </script>
 </body>
 
 </html>
