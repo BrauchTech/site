@@ -142,6 +142,10 @@
     setTimeout(n.close.bind(n), 5000);
     }
     notification();
+    
+    Notification.requestPermission().then(function(result){
+      console.log(result)
+    })
   </script>
 </body>
 
