@@ -131,13 +131,17 @@
   </script>
 
   <script>
+  function notification(){
+  
    var options = {
     body: "theBody",
     icon: "theIcon"
-  }
+    };
   
-  var n = new Notification("theTitle", options);
-  setTimeout(n.close.bind(n), 5000);
+    var n = new Notification("theTitle", options);
+    setTimeout(n.close.bind(n), 5000);
+    }
+    notification();
   </script>
 </body>
 
