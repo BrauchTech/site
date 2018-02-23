@@ -132,6 +132,9 @@
 
   <script>
   function notification(){
+    Notification.requestPermission().then(function(result){
+      console.log(result)
+    })
   
    var options = {
     body: "theBody",
@@ -143,9 +146,7 @@
     }
     notification();
     
-    Notification.requestPermission().then(function(result){
-      console.log(result)
-    })
+    
   </script>
 </body>
 
