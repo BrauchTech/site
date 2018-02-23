@@ -25,9 +25,9 @@ app.post('/contato', function(req, res) {
       }
     })
 
-    console.log(req.body);
 
-    let t = `nome: `
+
+    let t = `nome: ${req.body.nome}, email: ${req.body.email}, telefone: ${req.body.telefone}, mensagem: ${req.body.mensagem}`
 
     const mailOptions = {
       from: `Contato Site <${process.env.user}>`,
