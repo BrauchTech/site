@@ -130,23 +130,6 @@
     gtag('config', 'UA-114461826-1');
   </script>
 
-  <script>
-  function notification(){
-     Notification.requestPermission(function(){
-	var options = {
-		body: "theBody",
-		icon: "theIcon"
-	}
-  
-	var n = new Notification("theTitle", options);
-	
-	setTimeout(n.close.bind(n), 5000);	
-  })
-    }
-    notification();
-    
-    
-  </script>
 </body>
 
 </html>
