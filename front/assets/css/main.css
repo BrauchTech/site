@@ -514,8 +514,8 @@ header #logo a:hover {
 }
 
 nav#menu {
-	float: right;
-	margin-right: 35%;
+	/* float: right; */
+	/* margin-right: 35%; */
 }
 
 nav#menu #menu-nav {

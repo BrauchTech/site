@@ -11,7 +11,9 @@ app.set('views', './front')
 app.use(helmet())
 app.use(compression())
 app.use(express.static('./front/'))
-app.use(bodyParser())
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 app.post('/contato', function(req, res) {
   nodemailer.createTestAccount((err, account) => {
@@ -47,7 +49,9 @@ app.post('/contato', function(req, res) {
 })
 
 app.get('/', function(req, res) {
-  res.render('index.ejs', {msg: ''})
+  res.render('index.ejs', {
+    msg: ''
+  })
 })
 
 app.listen(process.env.PORT || 8080, function() {
