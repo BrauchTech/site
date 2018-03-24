@@ -32,7 +32,7 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #DE5E60;
+	background-color: #0ADF73;
 	color:#FFFFFF;
 }
 
@@ -106,12 +106,12 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background:#DE5E60;
+	background:#0ADF73;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background:#DE5E60;
+	background:#0ADF73;
 	color:#FFFFFF;
 }
 
@@ -273,7 +273,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  	background-color: #DE5E60;
+  	background-color: #0ADF73;
 	color: #FFFFFF;
   	text-decoration: none;
   	display: block;
@@ -321,7 +321,7 @@
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-  	background-color: #DE5E60;
+  	background-color: #0ADF73;
 	color: #FFFFFF;
   	cursor: default;
 }
@@ -362,7 +362,7 @@
 
 blockquote {
   	padding: 15px 20px;
-  	border-left: 2px solid #DE5E60;
+  	border-left: 2px solid #0ADF73;
 }
 
 blockquote p {
@@ -478,7 +478,7 @@ blockquote small:before {
 ================================================== */
 
 .info-block {
-    border-left: 2px solid #DE5E60;
+    border-left: 2px solid #0ADF73;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -590,7 +590,7 @@ blockquote small:before {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #DE5E60;	
+	background-color: #0ADF73;	
 	
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
