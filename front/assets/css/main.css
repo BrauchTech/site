@@ -285,7 +285,7 @@ h3.spec {
 #home-slider {
 	position: relative;
 	overflow: hidden;
-	height: 90%;
+	height: 70%;
 }
 
 #home-slider .overlay {
@@ -513,10 +513,10 @@ header #logo a:hover {
 	filter: alpha(opacity=65);
 }
 
-nav#menu {
+/* nav#menu { */
 	/* float: right; */
 	/* margin-right: 35%; */
-}
+/* } */
 
 nav#menu #menu-nav {
 	margin: 0;
