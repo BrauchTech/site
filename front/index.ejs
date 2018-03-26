@@ -177,7 +177,7 @@
               <input type="text" name="telefone" placeholder="Tem telefone/whatsapp/telegram? ">
             </p>
             <p class="contact-message">
-              <textarea id="contact_message" placeholder="Sua Mensagem" name="message" rows="5" cols="40"></textarea>
+              <textarea id="contact_message" placeholder="Sua Mensagem" name="mensagem" rows="5" cols="40" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Manda ver! Estamos aqui para ajudar')"></textarea>
             </p>
             <p class="contact-submit">
               <input type="submit" class="submit" value="Call the Brauchers!">
